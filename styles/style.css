@@ -50,15 +50,16 @@ nav > ul{
 .banner-description{
     color: #727272;
     padding: 30px 0;
-
+}
+.button{
+    color: #FFFFFF;
+    background: #FF900E;
+    border-radius: 8px;
+    border: none;
 }
 .button-primary{
     font-size: 20px;
     font-weight: 600;
-    color: #FFFFFF;
-    background-color: #FF900E;
-    border: none;
-    border-radius: 8px;
     padding: 20px 24px;
 }
 .container-primary img{
@@ -87,15 +88,15 @@ nav > ul{
     font-size: 40px;
     font-weight: 500;
 }
-.highlight-primary{
-    color: #131313;
+.title-primary{
     font-size: 45px;
     font-weight: 600;
 }
+.highlight-primary{
+    color: #131313;
+}
 .highlight-secondary{
     color: #FF900E;
-    font-size: 45px;
-    font-weight: 600;
 }
 .feature-description{
     color: #727272;
@@ -103,3 +104,50 @@ nav > ul{
 }
 
 /* enjoyable features styles */
+.enjoyable-features-container{
+    display: flex;
+    align-items: center;
+    gap: 146px;
+    margin-bottom: 130px;
+    position: relative;
+}
+.enjoyable-features-container img{
+    width: 100%;
+}
+.feature{
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.enjoyable-features .feature-title{
+    color: #131313;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.service-title{
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+}
+.service-description{
+    color: #727272;
+    padding-top: 10px;
+}
+.button-secondary{
+    position: absolute;
+    left: 460px;
+    bottom: 5px;
+    padding: 46px 42px;
+}
+.button-title{
+    font-size: 55px;
+    font-weight: 700;
+}
+.button-sub-title{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* facts styles */
