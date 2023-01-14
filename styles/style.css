@@ -12,7 +12,7 @@ body{
 }
 
 /* navigation styles */
-header{
+.header{
     background-color: rgba(255, 144, 14, 0.1);
 }
 .container-primary{
@@ -200,3 +200,12 @@ nav > ul{
 }
 
 /* footer styles */
+.footer{
+    color: #424242;
+    font-size: 20px;
+    text-align: center;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+    padding: 38px 0;
+    margin-bottom: 216px;
+}
