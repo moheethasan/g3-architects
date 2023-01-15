@@ -197,9 +197,86 @@ nav > ul{
 .achievement:hover{
     transform: scale(1.5) rotate(360deg);
     transition: transform 0.4s ease-in-out;
-    background: linear-gradient(109.6deg, rgb(255, 194, 48) 11.2%, rgb(250, 152, 60) 100.2%);
+    background: linear-gradient(109.6deg, rgb(248, 206, 108) 11.2%, rgb(255, 169, 89) 100.2%);
     border: 1px solid rgb(214, 18, 18);
 }
+
+/* what you can do and contact styles */
+.service-contact{
+    text-align: center;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 60px;
+    margin: 80px auto;
+}
+.service{
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    margin: 0 auto;
+}
+.service img{
+    width: 50px;
+}
+.service1{
+    padding: 20px;
+}
+.service2{
+    padding: 20px 40px;
+}
+.service3{
+    padding: 20px 50px;
+}
+.service4{
+    padding: 20px 24px;
+}
+.contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    background-color: #FFF4E7;
+    gap: 80px;
+    padding: 50px 0;
+}
+.contact-us input{
+    display: flex;
+}
+.contact-title, .form-title{
+    font-size: 38px;
+    font-weight: 600;
+}
+.contact-sub-title{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px auto 25px;
+}
+.form-title{
+    margin-bottom: 10px;
+}
+.social-links{
+    display: flex;
+    gap: 20px;
+}
+.contact-us input[type="text"], input[type="email"], textarea{
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+    resize: none;
+}
+.button-tertiary{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+} 
 
 /* our sponsors styles */
 .our-sponsors{
@@ -233,14 +310,16 @@ nav > ul{
     .our-features,
     .enjoyable-features-container,
     .achievements,
-    .sponsors{
+    .sponsors,
+    .contact-us{
         flex-direction: column;
     }
     .feature-photos{
         grid-template-columns: repeat(1, 1fr);
     }
     .our-features,
-    .facts{
+    .facts,
+    .contact-us{
         text-align: center;
     }
     .architect img{
@@ -253,6 +332,15 @@ nav > ul{
     .button-secondary{
         position: static;
     }
+    .services{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .social-links{
+        justify-content: center;
+    }
+    .button-tertiary{
+        margin: 0 auto;
+    }
     .sponsors{
         width: 30%;
         margin: 0 auto;
@@ -264,7 +352,8 @@ nav > ul{
 @media only screen and (min-width: 577px) and (max-width: 768px){
     .our-features,
     .enjoyable-features-container,
-    .sponsors{
+    .sponsors,
+    .contact-us{
         flex-direction: column;
     }
     .achievements{
@@ -278,7 +367,8 @@ nav > ul{
         grid-template-columns: repeat(2, 1fr);
     }
     .our-features,
-    .facts{
+    .facts,
+    .contact-us{
         text-align: center;
     }
     .architect img{
@@ -290,6 +380,15 @@ nav > ul{
     }
     .button-secondary{
         position: static;
+    }
+    .services{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .social-links{
+        justify-content: center;
+    }
+    .button-tertiary{
+        margin: 0 auto;
     }
     .sponsors{
         width: 30%;
